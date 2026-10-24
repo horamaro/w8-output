@@ -1,47 +1,88 @@
-
 /*
  最小限のリセット
 */
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-  }
-
-  section{
-    max-width: 1000px;
-    margin: 0 auto;
+  box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+}
+
+section {
+  max-width: 1000px;
+  margin: 0 auto;
+}
 
 /*
 grid
 */
 
-
-.grid{
-    display:flex;
-    gap:16px;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
-
+.grid {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
-.grid > div{
-    background-color: #ccc;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.grid-4x4 > div{
-    width:calc((100% - (16px*3)) /4 );
+.grid > div {
+  background-color: #ccc;
+  padding: 20px 0;
+  text-align: center;
+  border-radius: 10px;
 }
 
-.grid-2x2 > div{
-    width:calc((100% - (16px*1)) /2 );
+.grid-4x4 > div {
+  width: calc((100% - (16px * 3)) / 4);
 }
 
-.grid-6x1 > div{
-    width:calc((100% - (16px*5)) /6 );
+.grid-2x2 > div {
+  width: calc((100% - (16px * 1)) / 2);
+}
+
+.grid-6x1 > div {
+  width: calc((100% - (16px * 5)) / 6);
+}
+
+/*
+form
+*/
+.form-section {
+  background-color: #333;
+  color: #fff;
+  padding: 32px;
+  max-width: 560px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.form-button {
+  display: block;
+  width: 100%;
+  background: #0ea5e9;
+  border: 1px solid #0ea5e9;
+  border-radius: 10px;
+  padding: 8px;
+  color: #fff;
+  cursor: pointer;
 }

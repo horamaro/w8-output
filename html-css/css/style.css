@@ -1,0 +1,47 @@
+
+/*
+ 最小限のリセット
+*/
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+
+  section{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+/*
+grid
+*/
+
+
+.grid{
+    display:flex;
+    gap:16px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+
+}
+.grid > div{
+    background-color: #ccc;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.grid-4x4 > div{
+    width:calc((100% - (16px*3)) /4 );
+}
+
+.grid-2x2 > div{
+    width:calc((100% - (16px*1)) /2 );
+}
+
+.grid-6x1 > div{
+    width:calc((100% - (16px*5)) /6 );
+}
